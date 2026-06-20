@@ -119,8 +119,8 @@ export default function Hero() {
               <div className="relative rounded-2xl overflow-hidden shadow-2xl"
                 style={{ boxShadow: '0 30px 80px rgba(0,0,0,0.5), 0 0 0 1px rgba(255,255,255,0.05)' }}>
                 <img
-                  src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&fit=crop&w=600&q=90"
-                  alt="Students learning English confidently"
+                  src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=600&q=90"
+                  alt="Students learning English"
                   className="w-full h-[460px] object-cover"
                 />
                 <div className="absolute inset-0 img-overlay" />
