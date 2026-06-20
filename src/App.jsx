@@ -21,7 +21,6 @@ import LeadPopup from './components/LeadPopup';
 
 export default function App() {
   return (
-    /* overflow-x here, NOT on body — body overflow-x blocks GPU scroll compositing */
     <div className="overflow-x-hidden">
       <Loader />
       <LeadPopup />

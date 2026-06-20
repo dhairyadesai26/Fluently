@@ -18,7 +18,6 @@ export default function SuccessStory() {
         </div>
 
         <div className="grid md:grid-cols-2 gap-12 items-center">
-          {/* Image side */}
           <motion.div
             className="relative"
             initial={{ opacity: 0, scale: 0.97 }}
@@ -52,7 +51,6 @@ export default function SuccessStory() {
             </motion.div>
           </motion.div>
 
-          {/* Story side */}
           <motion.div
             initial={{ opacity: 0, x: 25 }}
             whileInView={{ opacity: 1, x: 0 }}

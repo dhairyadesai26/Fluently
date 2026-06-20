@@ -46,7 +46,6 @@ export default function Testimonials() {
           <p className="text-white/50 text-lg font-dm">Real students. Real results. Real transformations.</p>
         </div>
 
-        {/* Main Slider */}
         <div className="max-w-3xl mx-auto mb-12">
           <div className="relative overflow-hidden rounded-2xl"
             style={{ background: 'rgba(255,255,255,0.04)', border: '1px solid rgba(255,255,255,0.08)' }}>
@@ -87,7 +86,6 @@ export default function Testimonials() {
             </AnimatePresence>
           </div>
 
-          {/* Controls */}
           <div className="flex items-center justify-center gap-4 mt-6">
             <button
               onClick={() => { setDir(-1); setCurrent(c => (c - 1 + TESTIMONIALS.length) % TESTIMONIALS.length); }}
@@ -113,7 +111,6 @@ export default function Testimonials() {
           </div>
         </div>
 
-        {/* Mini Testimonials Grid */}
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
           {[
             { text: '"From rejected 3 times to placed at TCS in 60 days."', name: 'Rohan M., Nagpur' },

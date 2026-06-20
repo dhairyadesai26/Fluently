@@ -9,10 +9,8 @@ export default function LeadPopup() {
   useEffect(() => {
     try { if (localStorage.getItem('fl_popup') === '1') return; } catch {}
 
-    // Show after 10 seconds
     const timer = setTimeout(() => setShow(true), 10000);
 
-    // Or on exit intent
     const onMouseLeave = (e) => {
       if (e.clientY < 0 && !submitted) setShow(true);
     };
@@ -58,7 +56,6 @@ export default function LeadPopup() {
             </button>
 
             <div className="grid md:grid-cols-[1fr_1.2fr]">
-              {/* Image side */}
               <div className="relative hidden md:block">
                 <img
                   src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=400&q=90"
@@ -75,7 +72,6 @@ export default function LeadPopup() {
                 </div>
               </div>
 
-              {/* Form side */}
               <div className="p-8 flex flex-col justify-center">
                 {!submitted ? (
                   <>

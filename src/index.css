@@ -9,15 +9,12 @@
     font-family: 'DM Sans', system-ui, sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    /* prevents white canvas on overscroll (rubber-band / pull-to-refresh) */
     background: #f8fafc;
     overscroll-behavior: none;
   }
 
   body {
     background: #f8fafc;
-    /* overflow-x on body breaks GPU scroll compositing → white flash.
-       overflow-x is handled by the #root wrapper instead. */
   }
 
   h1, h2, h3, h4, h5 { font-family: 'Sora', system-ui, sans-serif; }
@@ -67,7 +64,6 @@
   .scroll-hide { -ms-overflow-style: none; scrollbar-width: none; }
 }
 
-/* Custom animations not in Tailwind */
 @keyframes float-card {
   0%, 100% { transform: translateY(0px) rotate(0deg); }
   50% { transform: translateY(-12px) rotate(1deg); }
@@ -104,37 +100,29 @@
 .animate-pulse-dot { animation: pulse-dot 1.5s ease-in-out infinite; }
 .animate-progress { animation: progress-fill 1.6s ease-out forwards; }
 
-/* Loader */
 .loader-progress { animation: progress-fill 1.5s ease-out forwards; }
 
-/* Section fade-in (managed by Framer Motion) */
 .section-hidden { opacity: 0; transform: translateY(40px); }
 
-/* FAQ smooth height */
 .faq-content {
   overflow: hidden;
   transition: max-height 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* Swiper-like slider dot */
 .dot-active {
   width: 24px !important;
   border-radius: 4px !important;
   background: #4f46e5 !important;
 }
 
-/* Before/After cards */
 .before-after-divider {
   background: linear-gradient(to bottom, transparent, rgba(79,70,229,0.3), transparent);
 }
 
-/* Star rating color */
 .star-gold { color: #f59e0b; }
 
-/* Image brightness overlay */
 .img-overlay { background: linear-gradient(to bottom, transparent 50%, rgba(15,12,41,0.6) 100%); }
 
-/* Module card number */
 .module-num {
   background: linear-gradient(135deg, #4f46e5, #7c3aed);
   -webkit-background-clip: text;

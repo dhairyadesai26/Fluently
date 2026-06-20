@@ -25,7 +25,6 @@ export default function Transformation() {
         </div>
 
         <div className="grid md:grid-cols-[1fr_auto_1fr] gap-6 items-center">
-          {/* Before */}
           <motion.div
             className="rounded-2xl p-7 border border-red-500/20"
             style={{ background: 'rgba(239,68,68,0.05)' }}
@@ -59,7 +58,6 @@ export default function Transformation() {
             </div>
           </motion.div>
 
-          {/* Arrow divider */}
           <motion.div
             className="flex flex-col items-center gap-3 py-4"
             initial={{ opacity: 0, scale: 0.7 }}
@@ -75,7 +73,6 @@ export default function Transformation() {
             </span>
           </motion.div>
 
-          {/* After */}
           <motion.div
             className="rounded-2xl p-7 border border-emerald-500/20"
             style={{ background: 'rgba(16,185,129,0.05)' }}

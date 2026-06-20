@@ -9,7 +9,6 @@ export default function FreeDemo() {
     <section id="demo" className="py-20 bg-white">
       <div className="max-w-6xl mx-auto px-5">
 
-        {/* Free Demo */}
         <div className="grid md:grid-cols-2 gap-12 items-center mb-20">
           <motion.div
             initial={{ opacity: 0, x: -25 }}
@@ -75,7 +74,6 @@ export default function FreeDemo() {
           </motion.div>
         </div>
 
-        {/* Lead Magnets */}
         <div>
           <div className="text-center mb-10">
             <span className="inline-block bg-emerald-50 text-emerald-600 text-xs font-bold uppercase tracking-widest px-4 py-2 rounded-full mb-4 font-dm">

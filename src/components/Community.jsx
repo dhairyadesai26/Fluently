@@ -40,7 +40,6 @@ export default function Community() {
           ))}
         </div>
 
-        {/* Gamification */}
         <div>
           <div className="text-center mb-10">
             <span className="inline-block bg-amber-500/15 text-amber-400 text-xs font-bold uppercase tracking-widest px-4 py-2 rounded-full mb-4 font-dm border border-amber-500/20">
@@ -74,7 +73,6 @@ export default function Community() {
             ))}
           </div>
 
-          {/* Live activity bar */}
           <motion.div
             className="mt-10 rounded-2xl p-6 border border-white/6"
             style={{ background: 'rgba(255,255,255,0.03)' }}

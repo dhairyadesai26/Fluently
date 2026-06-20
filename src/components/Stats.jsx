@@ -16,7 +16,7 @@ function useCounter(end, duration, decimals, active) {
       if (progress < 1) requestAnimationFrame(tick);
     };
     requestAnimationFrame(tick);
-  }, [active]); // eslint-disable-line
+  }, [active]);
   return val;
 }
 

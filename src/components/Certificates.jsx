@@ -8,7 +8,6 @@ export default function Certificates() {
     <section id="certificates" className="py-20 bg-white">
       <div className="max-w-6xl mx-auto px-5">
         <div className="grid md:grid-cols-2 gap-12 items-center">
-          {/* Left — Certificate Preview */}
           <motion.div
             className="relative"
             initial={{ opacity: 0, scale: 0.97 }}
@@ -60,7 +59,6 @@ export default function Certificates() {
             </motion.div>
           </motion.div>
 
-          {/* Right — Benefits */}
           <motion.div
             initial={{ opacity: 0, x: 25 }}
             whileInView={{ opacity: 1, x: 0 }}

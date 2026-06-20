@@ -22,7 +22,6 @@ export default function Navbar() {
 
   return (
     <>
-      {/* Announcement Bar */}
       <div className="gradient-brand text-white text-sm py-2.5 px-4 text-center font-dm relative">
         <span className="inline-flex items-center gap-2 flex-wrap justify-center">
           <span className="inline-block w-2 h-2 rounded-full bg-white animate-pulse-dot" />
@@ -34,7 +33,6 @@ export default function Navbar() {
         </span>
       </div>
 
-      {/* Navbar */}
       <motion.nav
         className={`sticky top-0 z-50 transition-all duration-300 ${
           scrolled ? 'glass-white shadow-sm border-b border-gray-200/60' : 'bg-white/80 backdrop-blur-xl'
@@ -44,7 +42,6 @@ export default function Navbar() {
         transition={{ duration: 0.5, ease: 'easeOut' }}
       >
         <div className="max-w-6xl mx-auto px-5 h-16 flex items-center justify-between gap-6">
-          {/* Logo */}
           <a href="#" className="flex items-center gap-2.5 flex-shrink-0 group">
             <span className="text-2xl">🗣️</span>
             <span className="font-sora text-xl font-black tracking-tight"
@@ -53,7 +50,6 @@ export default function Navbar() {
             </span>
           </a>
 
-          {/* Desktop Links */}
           <div className="hidden md:flex items-center gap-1 flex-1 justify-center">
             {NAV_LINKS.map(link => (
               <button
@@ -66,7 +62,6 @@ export default function Navbar() {
             ))}
           </div>
 
-          {/* CTA Buttons */}
           <div className="hidden md:flex items-center gap-2.5 flex-shrink-0">
             <button className="text-sm font-medium text-gray-600 hover:text-indigo-600 px-3 py-2 transition-all">
               Log In
@@ -79,7 +74,6 @@ export default function Navbar() {
             </button>
           </div>
 
-          {/* Hamburger */}
           <button
             className="md:hidden p-2 rounded-lg hover:bg-gray-100 transition-all"
             onClick={() => setMobileOpen(!mobileOpen)}
@@ -89,7 +83,6 @@ export default function Navbar() {
           </button>
         </div>
 
-        {/* Mobile Menu */}
         <AnimatePresence>
           {mobileOpen && (
             <motion.div

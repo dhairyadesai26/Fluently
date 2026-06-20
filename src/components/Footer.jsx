@@ -5,7 +5,6 @@ export default function Footer() {
     <footer className="bg-[#050509] pt-16 pb-0">
       <div className="max-w-6xl mx-auto px-5">
         <div className="grid md:grid-cols-[1.8fr_1fr_1fr_1fr] gap-10 pb-12 border-b border-white/5">
-          {/* Brand */}
           <div>
             <div className="flex items-center gap-2.5 mb-3">
               <span className="text-2xl">🗣️</span>
@@ -18,7 +17,6 @@ export default function Footer() {
             <p className="text-white/25 text-sm font-dm leading-relaxed mb-6 max-w-xs">
               India's #1 English speaking course for students. Transforming nervous learners into confident communicators — 15,000+ students and counting.
             </p>
-            {/* Social */}
             <div className="flex gap-2.5 mb-6">
               {[
                 { icon: '📸', label: 'Instagram' },
@@ -39,7 +37,6 @@ export default function Footer() {
             </div>
           </div>
 
-          {/* Course */}
           <div>
             <h4 className="font-sora font-bold text-white/50 text-xs uppercase tracking-widest mb-5">Course</h4>
             <ul className="flex flex-col gap-3">
@@ -53,7 +50,6 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Company */}
           <div>
             <h4 className="font-sora font-bold text-white/50 text-xs uppercase tracking-widest mb-5">Company</h4>
             <ul className="flex flex-col gap-3">
@@ -67,7 +63,6 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Support */}
           <div>
             <h4 className="font-sora font-bold text-white/50 text-xs uppercase tracking-widest mb-5">Support</h4>
             <ul className="flex flex-col gap-3">

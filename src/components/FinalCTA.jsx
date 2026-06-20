@@ -62,7 +62,6 @@ export default function FinalCTA() {
             This batch's enrollment closes in:
           </p>
 
-          {/* Countdown */}
           <div className="flex items-center justify-center gap-3 mb-8">
             {[
               { val: pad(d), label: 'Days' },
@@ -103,7 +102,6 @@ export default function FinalCTA() {
             7-day satisfaction promise · UPI/Cards/EMI · Instant access · No hidden fees
           </p>
 
-          {/* Joined row */}
           <div className="flex items-center justify-center gap-3 mt-8">
             <div className="flex -space-x-2.5">
               {[

@@ -1,5 +1,3 @@
-// ── FLUENTLY — Central Content Data ─────────────────────────
-
 export const BRAND = {
   name: 'Fluently',
   tagline: 'Speak Confidently. Succeed Globally.',

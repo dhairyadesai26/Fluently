@@ -15,13 +15,11 @@ export default function Hero() {
     <section id="hero" className="relative min-h-[92vh] flex items-center overflow-hidden py-16 md:py-20"
       style={{ background: 'linear-gradient(145deg, #0f0c29 0%, #1a1048 45%, #0d1b3e 100%)' }}>
 
-      {/* Ambient blobs */}
       <div className="absolute inset-0 pointer-events-none overflow-hidden">
         <div className="absolute w-[600px] h-[600px] rounded-full -top-40 -right-40 opacity-20"
           style={{ background: 'radial-gradient(circle, #4f46e5 0%, transparent 70%)' }} />
         <div className="absolute w-[400px] h-[400px] rounded-full bottom-0 -left-20 opacity-15"
           style={{ background: 'radial-gradient(circle, #7c3aed 0%, transparent 70%)' }} />
-        {/* Grid pattern */}
         <div className="absolute inset-0 opacity-[0.03]"
           style={{ backgroundImage: 'linear-gradient(rgba(255,255,255,.5) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,.5) 1px, transparent 1px)', backgroundSize: '60px 60px' }} />
       </div>
@@ -29,7 +27,6 @@ export default function Hero() {
       <div className="max-w-6xl mx-auto px-5 relative z-10 w-full">
         <div className="grid md:grid-cols-2 gap-12 lg:gap-20 items-center">
 
-          {/* Left — Copy */}
           <div>
             <motion.div
               className="inline-flex items-center gap-2 text-xs font-bold text-white/80 border border-white/20 bg-white/8 px-4 py-2 rounded-full mb-6 backdrop-blur-sm"
@@ -87,7 +84,6 @@ export default function Hero() {
               </button>
             </motion.div>
 
-            {/* Trust Badges */}
             <motion.div
               className="flex flex-wrap items-center gap-4 text-sm"
               initial={{ opacity: 0 }}
@@ -113,7 +109,6 @@ export default function Hero() {
             </motion.div>
           </div>
 
-          {/* Right — Visual */}
           <motion.div
             className="relative hidden md:block"
             initial={{ opacity: 0, x: 40 }}
@@ -121,7 +116,6 @@ export default function Hero() {
             transition={{ duration: 0.7, delay: 0.2, ease: 'easeOut' }}
           >
             <div className="relative">
-              {/* Main Image */}
               <div className="relative rounded-2xl overflow-hidden shadow-2xl"
                 style={{ boxShadow: '0 30px 80px rgba(0,0,0,0.5), 0 0 0 1px rgba(255,255,255,0.05)' }}>
                 <img
@@ -132,7 +126,6 @@ export default function Hero() {
                 <div className="absolute inset-0 img-overlay" />
               </div>
 
-              {/* Float Card 1 */}
               <motion.div
                 className="absolute -top-5 -left-8 bg-white rounded-xl px-4 py-3 flex items-center gap-3 shadow-xl border border-white/50 min-w-[180px]"
                 animate={{ y: [0, -8, 0] }}
@@ -145,7 +138,6 @@ export default function Hero() {
                 </div>
               </motion.div>
 
-              {/* Float Card 2 */}
               <motion.div
                 className="absolute -bottom-5 -right-8 bg-white rounded-xl px-4 py-3 flex items-center gap-3 shadow-xl border border-white/50 min-w-[190px]"
                 animate={{ y: [0, -6, 0] }}
@@ -158,7 +150,6 @@ export default function Hero() {
                 </div>
               </motion.div>
 
-              {/* Float Card 3 — Joined Today */}
               <motion.div
                 className="absolute bottom-16 -left-10 bg-white rounded-xl px-3.5 py-2.5 flex items-center gap-2.5 shadow-xl border border-white/50"
                 animate={{ y: [0, -5, 0] }}
@@ -176,7 +167,6 @@ export default function Hero() {
                 <span className="text-xs font-dm font-semibold text-gray-700"><strong>+320</strong> joined today</span>
               </motion.div>
 
-              {/* Glow ring */}
               <div className="absolute -inset-4 rounded-3xl opacity-20 pointer-events-none"
                 style={{ background: 'linear-gradient(135deg, #4f46e5, #7c3aed)', filter: 'blur(30px)', zIndex: -1 }} />
             </div>

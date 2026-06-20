@@ -3,7 +3,6 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { ArrowUp, X } from 'lucide-react';
 import { SOCIAL_NOTIFS } from '../data/content';
 
-// WhatsApp FAB
 function WhatsAppFAB() {
   return (
     <motion.a
@@ -27,7 +26,6 @@ function WhatsAppFAB() {
   );
 }
 
-// Back to Top
 function BackToTop() {
   const [visible, setVisible] = useState(false);
   useEffect(() => {
@@ -54,7 +52,6 @@ function BackToTop() {
   );
 }
 
-// Social Proof Notification
 function SocialNotif() {
   const [visible, setVisible] = useState(false);
   const [notif, setNotif] = useState(SOCIAL_NOTIFS[0]);
@@ -105,7 +102,6 @@ function SocialNotif() {
   );
 }
 
-// Cookie Banner
 function CookieBanner() {
   const [dismissed, setDismissed] = useState(() => {
     try { return localStorage.getItem('fl_cookie') === '1'; } catch { return false; }
@@ -143,7 +139,6 @@ function CookieBanner() {
   );
 }
 
-// Scroll progress bar
 function ScrollProgress() {
   const [progress, setProgress] = useState(0);
   useEffect(() => {

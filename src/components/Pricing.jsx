@@ -73,7 +73,6 @@ export default function Pricing() {
           </p>
         </div>
 
-        {/* FOMO bar */}
         <motion.div
           className="bg-red-50 border border-red-200 rounded-2xl p-4 mb-8 flex flex-col sm:flex-row items-center justify-between gap-3"
           initial={{ opacity: 0, y: -10 }}
@@ -171,7 +170,6 @@ export default function Pricing() {
           ))}
         </div>
 
-        {/* Guarantee + Trust */}
         <motion.div
           className="mt-10 grid md:grid-cols-2 gap-5"
           initial={{ opacity: 0, y: 15 }}
