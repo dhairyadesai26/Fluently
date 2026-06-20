@@ -9,9 +9,12 @@ export default function LeadPopup() {
   useEffect(() => {
     try { if (localStorage.getItem('fl_popup') === '1') return; } catch {}
 
-    const timer = setTimeout(() => setShow(true), 10000);
+    const timer = setTimeout(() => {
+      try { if (localStorage.getItem('fl_popup') !== '1') setShow(true); } catch {}
+    }, 10000);
 
     const onMouseLeave = (e) => {
+      try { if (localStorage.getItem('fl_popup') === '1') return; } catch {}
       if (e.clientY < 0 && !submitted) setShow(true);
     };
     document.addEventListener('mouseleave', onMouseLeave);
